@@ -9,7 +9,7 @@ class DropBlock_Ske(nn.Module):
         self.block_size = block_size
 
 
-    def forward(self, input,keep_prob, A): # n,c,t,v
+    def forward(self, input, keep_prob, A): # n,c,t,v
         self.keep_prob = keep_prob
         if not self.training or self.keep_prob == 1:
             return input
