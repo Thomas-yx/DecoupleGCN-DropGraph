@@ -8,7 +8,7 @@ class DropBlockT_1d(nn.Module):
         self.keep_prob = 0.0
         self.block_size = block_size
 
-    def forward(self, input,keep_prob):
+    def forward(self, input, keep_prob):
         self.keep_prob = keep_prob
         if not self.training or self.keep_prob == 1:
             return input
